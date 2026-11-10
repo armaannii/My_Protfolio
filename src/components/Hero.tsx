@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { FaEnvelope, FaFacebookF, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineCubeTransparent, HiOutlineDocumentDownload } from 'react-icons/hi'
 import HeroIllustration from './HeroIllustration'
 
