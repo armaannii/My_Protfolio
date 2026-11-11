@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { HiOutlineDocumentDownload } from 'react-icons/hi'
+import resumeUrl from '../assets/resume.pdf'
 
 interface NavbarProps {
   activeSection: string
@@ -86,7 +87,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
           ))}
           <li className="ml-3">
             <a
-              href="/resume.pdf"
+              href={resumeUrl}
               download
               className="btn-primary text-sm py-2 px-5"
               aria-label="Download Resume"
@@ -141,7 +142,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
           ))}
           <li className="pt-2">
             <a
-              href="/resume.pdf"
+              href={resumeUrl}
               download
               className="btn-primary w-full justify-center text-sm"
               onClick={() => setMenuOpen(false)}

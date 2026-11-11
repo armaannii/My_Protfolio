@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineCubeTransparent, HiOutlineDocumentDownload } from 'react-icons/hi'
+import resumeUrl from '../assets/resume.pdf'
 import HeroIllustration from './HeroIllustration'
 
 const roles = [
@@ -131,7 +132,7 @@ export default function Hero() {
                 <HiOutlineCubeTransparent className="w-4 h-4" strokeWidth={2.5} />
                 View My Projects
               </button>
-              <a href="/resume.pdf" download className="btn-secondary">
+              <a href={resumeUrl} download className="btn-secondary">
                 <HiOutlineDocumentDownload className="w-4 h-4" strokeWidth={2.5} />
                 Download Resume
               </a>
